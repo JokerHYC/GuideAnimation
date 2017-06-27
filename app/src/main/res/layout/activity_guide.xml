@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+    >
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/indicator"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+
+    <com.hyc.guideanimation.InkPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="60dp"
+        app:currentPageIndicatorColor="#65cf97"
+        app:dotDiameter="10dp"
+        app:dotGap="12dp"
+        app:pageIndicatorColor="#dbdbdb"
+        />
+</FrameLayout>

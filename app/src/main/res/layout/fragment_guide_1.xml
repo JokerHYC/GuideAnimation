@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="695px"
+        android:layout_height="434px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150px"
+        android:src="@drawable/slg"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="906px"
+        android:layout_height="906px"
+        android:layout_below="@id/top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150px"
+
+        >
+
+        <com.hyc.guideanimation.KenBurnsView
+            android:id="@+id/burns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+        <FrameLayout
+            android:id="@+id/view_pager_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>
